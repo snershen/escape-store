@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif&family=Noto+Serif+TC:wght@500;600&family=Oswald:wght@700&display=swap");
+
+// font-family: 'Noto Sans TC', sans-serif;
+// font-family: 'Noto Serif', serif;
+// font-family: 'Noto Serif TC', serif;
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helper/variables";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+// @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+// @import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "./helper/mixin";
+@import "./base/base";
+@import "./helper/utilities";
+@import "./layout/navbar";
+@import "./layout/footer";
+@import "./page/index";
+@import "./page/gameDetail";
