@@ -67,3 +67,10 @@
     background-repeat: space;
   }
 }
+
+.circle-btn {
+  @include size(50px);
+  &:hover {
+    color: black;
+  }
+}
