@@ -31,10 +31,20 @@
   }
 }
 
-.bg-game-black {
-  position: relative;
-  z-index: 10;
-  background: linear-gradient(0deg, transparent 20%, black);
-  height: auto;
-  width: 100%;
+// .bg-game-black {
+//   position: relative;
+//   z-index: 10;
+//   background: linear-gradient(0deg, transparent 20%, black);
+//   height: auto;
+//   width: 100%;
+// }
+
+.book-form {
+  input {
+    outline: none;
+    border: solid 1px gray;
+    &::selection {
+      border: $primary;
+    }
+  }
 }

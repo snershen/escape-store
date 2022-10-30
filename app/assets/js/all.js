@@ -1,3 +1,4 @@
+//navbar
 window.addEventListener("scroll", (e) => {
   const navbar = document.querySelector("nav");
   const windowScrollY = window.scrollY;
@@ -8,6 +9,7 @@ window.addEventListener("scroll", (e) => {
   }
 });
 
+//swiper
 var swiper = new Swiper(".game-swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
@@ -54,4 +56,81 @@ var swiper = new Swiper(".comment-swiper", {
     },
   },
   loop: true,
+});
+
+//countup
+function countNum(endNum, target) {
+  $({ countNum: 0 }).animate(
+    {
+      countNum: endNum,
+    },
+    {
+      duration: 5000,
+      easing: "linear",
+      step: function () {
+        target.text(Math.floor(this.countNum));
+      },
+      complete: function () {
+        target.text(this.countNum);
+      },
+    }
+  );
+}
+
+// if ($(window.scrollY) > $(".comment".offsetTop)) {
+const comment = document.querySelector(".comment");
+
+window.addEventListener("scroll", (e) => {
+  if (window.scrollY <= comment.offsetTop - 1300) {
+    // setTimeout(countNum(8, $("#game-num")), 5000);
+    console.log("hui");
+    console.log(window.scrollY);
+    console.log(comment.offsetTop + 100);
+    countNum(8, $("#game-num"));
+    countNum(15643, $("#player-num"));
+    countNum(1342, $("#comment-num"));
+    window.removeEventListener("scroll", countNum);
+  } else {
+    return;
+  }
+});
+
+// $(window).scroll(() => {
+//   console.log("hui");
+//   console.log(window.scrollY);
+//   console.log($(".comment".offsetTop));
+//   if ($(window).scrollY === $(".comment").offsetTop) {
+//     // setTimeout(countNum(8, $("#game-num")), 5000);
+//     countNum(8, $("#game-num"));
+//     countNum(15643, $("#player-num"));
+//     countNum(1342, $("#comment-num"));
+//   }
+// });
+// }
+
+//calendar
+$(document).ready(function () {
+  $("#datepicker").datepicker();
+  $("#datepicker").datepicker("option", "monthNames", [
+    "一月",
+    "二月",
+    "三月",
+    "四月",
+    "五月",
+    "六月",
+    "七月",
+    "八月",
+    "九月",
+    "十月",
+    "十一月",
+    "十二月",
+  ]);
+  $("#datepicker").datepicker("option", "yearRange", "2022:2023");
+});
+
+//parallax
+window.addEventListener("scroll", (e) => {
+  $("#game-banner").css("opacity", 1 - window.scrollY / 700);
+  $("#game-banner").css("top", window.scrollY + "px");
+  // window.scrollY;
 });

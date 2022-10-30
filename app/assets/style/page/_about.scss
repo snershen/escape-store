@@ -1,0 +1,6 @@
+.about-bg {
+  background: center/cover url(../images/about/bg-about.jpg);
+  @include mobile {
+    background: center/cover url(../images/about/bg-about-mobile.jpg);
+  }
+}

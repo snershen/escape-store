@@ -133,3 +133,17 @@
     transform: translateX(16px);
   }
 }
+
+.bg-fluid {
+  background-position: center;
+  background-size: cover;
+}
+
+.multiply {
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: multiply;
+  transition: background-color 0.2s;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
