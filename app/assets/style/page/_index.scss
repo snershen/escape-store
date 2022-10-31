@@ -23,6 +23,9 @@
     height: auto;
     padding: 40px;
   }
+  @include mobile {
+    background-attachment: scroll;
+  }
 }
 
 .border-bottom-line {
