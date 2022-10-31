@@ -13185,13 +13185,13 @@ a:hover {
 
 @media (max-width: 768px) {
   .comment-container {
-    height: 280px;
+    height: 350px;
   }
 }
 
 .comment-container .comment-swiper {
   width: 100%;
-  height: 230px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13208,7 +13208,7 @@ a:hover {
 
 @media (max-width: 768px) {
   .comment-container .comment-swiper {
-    height: 220px;
+    height: 300px;
   }
 }
 
@@ -13416,6 +13416,10 @@ a:hover {
   background-color: rgba(0, 0, 0, 0);
 }
 
+.nowrap {
+  white-space: nowrap !important;
+}
+
 a {
   text-decoration: none;
 }
@@ -13557,6 +13561,12 @@ a {
   }
 }
 
+@media (max-width: 414px) {
+  .bg-num {
+    background-attachment: scroll;
+  }
+}
+
 .border-bottom-line::before {
   content: "";
   background: center/contain url(../images/share/comment-line.svg);
@@ -13673,6 +13683,18 @@ a {
 
 .group-bg-self {
   background-image: url(../images/group/group_4.png);
+}
+
+.overflow-x {
+  overflow-x: scroll;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+@media (max-width: 360px) {
+  .overflow-x {
+    padding-left: 100px;
+  }
 }
 
 .about-bg {

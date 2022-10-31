@@ -100,8 +100,6 @@ $(document).ready(function () {
 
 window.addEventListener("scroll", function (e) {
   $("#game-banner").css("opacity", 1 - window.scrollY / 700);
-  $("#game-banner").css("top", window.scrollY + "px"); // if ($("#game-banner").css("opacity") === 0) {
-  //   $("#game-banner").toggle("display", "none");
-  // }
+  $("#game-banner").css("top", window.scrollY + "px");
 });
 //# sourceMappingURL=all.js.map
