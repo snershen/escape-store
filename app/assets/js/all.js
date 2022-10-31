@@ -39,6 +39,7 @@ var swiper = new Swiper(".comment-swiper", {
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
+    clickable: true,
   },
   autoplay: {
     delay: 3000,
@@ -95,19 +96,6 @@ window.addEventListener("scroll", (e) => {
   }
 });
 
-// $(window).scroll(() => {
-//   console.log("hui");
-//   console.log(window.scrollY);
-//   console.log($(".comment".offsetTop));
-//   if ($(window).scrollY === $(".comment").offsetTop) {
-//     // setTimeout(countNum(8, $("#game-num")), 5000);
-//     countNum(8, $("#game-num"));
-//     countNum(15643, $("#player-num"));
-//     countNum(1342, $("#comment-num"));
-//   }
-// });
-// }
-
 //calendar
 $(document).ready(function () {
   $("#datepicker").datepicker();
@@ -132,5 +120,7 @@ $(document).ready(function () {
 window.addEventListener("scroll", (e) => {
   $("#game-banner").css("opacity", 1 - window.scrollY / 700);
   $("#game-banner").css("top", window.scrollY + "px");
-  // window.scrollY;
+  // if ($("#game-banner").css("opacity") === 0) {
+  //   $("#game-banner").toggle("display", "none");
+  // }
 });
