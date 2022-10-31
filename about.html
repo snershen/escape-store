@@ -1,10 +1,114 @@
----
-title: 密室逃脫｜輯光工作室
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>密室逃脫｜輯光工作室</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs//font-awesome/6.2.0/css/all.min.css"
+    />
 
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg container-fluid fixed-top py-4">
+      <div class="container d-flex px-0">
+        <a
+          class="navbar-brand font-serifTC fw-bold text-white"
+          href="index.html"
+          >輯光工作室</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i
+            class="fa-solid fa-bars navbar-toggler-icon text-white fa-lg d-flex align-items-center justify-content-center"
+          ></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active px-3 text-white"
+                aria-current="page"
+                href="index.html"
+                >首頁</a
+              >
+            </li>
+            <li class="nav-item px-3 text-white">
+              <a class="nav-link" href="game.html">密室遊戲</a>
+            </li>
+            <li class="nav-item px-3 text-white">
+              <a class="nav-link" href="group.html">團體 / 企業方案</a>
+            </li>
+            <li class="nav-item ps-3 text-white">
+              <a class="nav-link" href="about.html">關於輯光</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+<header class="about-bg vh-100 d-flex justify-content-center align-items-end">
+  <div class="bg-blur-dark text-white w-100 p-lg-5 px-0 py-5">
+    <div class="container">
+      <h1 class="fs-3 mb-3">嗨，我們是輯光工作室</h1>
+      <p class="fs-5">
+        成立於 2013
+        年，由一群喜愛密室逃脫的人成立，喜歡思考迸發的時刻，希望能帶來美好的體驗，密室逃脫不僅能帶來趣味性，甚至還能凝聚向心力，這也是我們著迷於此的原因。未來我們也會推出更多精彩的密室主題，歡迎來體驗！
+      </p>
+    </div>
+  </div>
+</header>
+<section class="store-num bg-num text-white">
+  <div class="container h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-lg-3 mb-5 mb-lg-0">
+        <h3 class="text-center">
+          <span
+            class="title-1 font-oswald mb-2 mb-lg-4 d-inline-block"
+            id="game-num"
+            >8</span
+          ><br />
+          <div class="fs-4">密室主題</div>
+        </h3>
+      </div>
+      <div class="col-lg-3 mb-5 mb-lg-0">
+        <h3 class="text-center">
+          <span
+            class="title-1 font-oswald mb-2 mb-lg-4 d-inline-block"
+            id="player-num"
+            >15643</span
+          ><br />
+          <div class="fs-4">玩家人數</div>
+        </h3>
+      </div>
+      <div class="col-lg-3 mb-5 mb-lg-0">
+        <h3 class="text-center">
+          <span
+            class="title-1 font-oswald mb-2 mb-lg-4 d-inline-block"
+            id="comment-num"
+            >1342</span
+          ><br />
+          <div class="fs-4">評價</div>
+        </h3>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="mt-5 py-lg-7 py-6">
   <div class="container">
     <h1 class="fs-1 deco-line text-white text-center mb-6">密室主題</h1>
@@ -202,3 +306,73 @@ current: index
   </div>
 </section>
 <div class="index-bg position-fixed top-0"></div>
+
+
+    <footer class="footer text-white py-6 bg-footer">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-3 pb-5 pb-lg-0">
+            <ul class="list-unstyled">
+              <li class="mb-3"><a href="#">首頁</a></li>
+              <li class="mb-3"><a href="#">密室遊戲</a></li>
+              <li class="mb-3"><a href="#">團體 / 企業方案</a></li>
+              <li class="mb-3"><a href="#">關於輯光</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <address>
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  信箱｜<a href="mailto:polarlight@gmail.com"
+                    >polarlight@gmail.com</a
+                  >
+                </li>
+                <li class="mb-3">
+                  電話｜<a href="tel:+886-932236542">0932-236-542</a>
+                </li>
+                <li class="mb-3">地址｜台北市萬華區成都路 10 號 2 樓</li>
+                <ul class="d-flex list-unstyled">
+                  <li class="pe-4">
+                    <a href="#">
+                      <img
+                        src="./assets/images/index/social_1.png"
+                        alt="facebook"
+                    /></a>
+                  </li>
+                  <li class="pe-4">
+                    <a href="#"
+                      ><img
+                        src="./assets/images/index/social_2.png"
+                        alt="instagram"
+                    /></a>
+                  </li>
+                  <li class="pe-4">
+                    <a href="#"
+                      ><img src="./assets/images/index/social_3.png" alt="line"
+                    /></a>
+                  </li>
+                </ul>
+              </ul>
+            </address>
+          </div>
+          <div class="col-lg-5 pb-5 pb-lg-0">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7647136867013!2d121.50476511555196!3d25.042057683968608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a909a2668603%3A0x6cca37fe22ec357a!2zMTA45Y-w5YyX5biC6JCs6I-v5Y2A5oiQ6YO96LevMTDomZ8y5qiT!5e0!3m2!1szh-TW!2stw!4v1666940596890!5m2!1szh-TW!2stw"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="rounded-2"
+            ></iframe>
+          </div>
+        </div>
+        <p class="fs-7">Copyright © 2022 輯光工作室 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
