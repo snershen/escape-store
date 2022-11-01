@@ -17,10 +17,10 @@
 }
 
 .overflow-x {
-  overflow-x: scroll;
-  margin-right: -20px;
-  margin-left: -20px;
   @media (max-width: 360px) {
+    overflow-x: scroll;
+    margin-right: -20px;
+    margin-left: -20px;
     padding-left: 100px;
   }
 }
