@@ -81,18 +81,21 @@ function countNum(endNum, target) {
 //滾動時的觸發條件
 function checkSlide(e) {
   const storeNum = document.querySelector(".store-num");
-  //抓取目前滑到的頁面底部位置
-  const slideAt = window.scrollY + window.innerHeight;
-  //抓取目標元素的頂部位置
-  const elTop = storeNum.offsetTop;
-  //當滑到的頁面底部位置觸碰到目標元素時
-  const isTouched = slideAt > elTop;
-  //限定觸發範圍，以增進效能
-  const isTouchedRange = slideAt - 50 < elTop;
-  if (isTouched && isTouchedRange) {
-    countNum(8, $("#game-num"));
-    countNum(15643, $("#player-num"));
-    countNum(1342, $("#comment-num"));
+  //判斷該頁面是否有該元素
+  if (storeNum) {
+    //抓取目前滑到的頁面底部位置
+    const slideAt = window.scrollY + window.innerHeight;
+    //抓取目標元素的頂部位置
+    const elTop = storeNum.offsetTop;
+    //當滑到的頁面底部位置觸碰到目標元素時
+    const isTouched = slideAt > elTop;
+    //限定觸發範圍，以增進效能
+    const isTouchedRange = slideAt - 50 < elTop;
+    if (isTouched && isTouchedRange) {
+      countNum(8, $("#game-num"));
+      countNum(15643, $("#player-num"));
+      countNum(1342, $("#comment-num"));
+    }
   }
 }
 
