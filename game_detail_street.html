@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>無人的街道｜輯光工作室</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs//font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg container-fluid fixed-top py-4">
+      <div class="container d-flex px-0">
+        <a
+          class="navbar-brand font-serifTC fw-bold text-white"
+          href="index.html"
+          >輯光工作室</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i
+            class="fa-solid fa-bars navbar-toggler-icon text-white fa-lg d-flex align-items-center justify-content-center"
+          ></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active px-3 text-white"
+                aria-current="page"
+                href="index.html"
+                >首頁</a
+              >
+            </li>
+            <li class="nav-item px-3 text-white">
+              <a class="nav-link" href="game.html">密室遊戲</a>
+            </li>
+            <li class="nav-item px-3 text-white">
+              <a class="nav-link" href="group.html">團體 / 企業方案</a>
+            </li>
+            <li class="nav-item ps-3 text-white">
+              <a class="nav-link" href="about.html">關於輯光</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+<header>
+  <div class="d-flex flex-column justify-content-center align-items-center">
+    <div class="game-detail-street position-relative" id="game-banner"></div>
+    <h1
+      class="game-title text-white font-serifTC position-absolute bottom-50"
+      id="game-title"
+    >
+      無人的街道
+    </h1>
+    <a
+      class="btn btn-lg-lg btn-outline-light px-5 py-3 hover-right rounded-1 position-absolute top-50 mt-5"
+      href="#booking"
+      >預約密室<i class="fa-solid fa-caret-right fa-lg ms-2"></i
+    ></a>
+  </div>
+</header>
+
+<div class="position-relative">
+  <section class="py-7 bg-game-black">
+    <p class="text-white text-center lh-lg fs-5">
+      當你再次醒來<br />
+      街道上空無一人，有台車向你駛了過來<br />駕駛座卻沒有人......
+    </p>
+  </section>
+  <section class="py-6">
+    <div class="container">
+      <div
+        class="row text-white flex-column-reverse flex-lg-row align-items-center"
+      >
+        <div class="col-lg-5">
+          <ul class="d-flex flex-wrap list-unstyled">
+            <li class="game-description-item w-50 p-4 p-lg-3 my-lg-2 my-0">
+              <i class="fa-solid fa-clock fa-xl mb-4 d-inline-block"></i>
+              <h3 class="fs-4 mb-2">90 分鐘</h3>
+              <p>包含解說時間 15 分鐘。遊戲開始前 5 分鐘，與結束 10 分鐘。</p>
+            </li>
+            <li class="game-description-item w-50 p-4 p-lg-3 my-lg-2 my-0">
+              <i
+                class="fa-brands fa-hackerrank fa-xl mb-4 d-lg-inline-block"
+              ></i>
+              <h3 class="fs-4 mb-2">難度簡單</h3>
+              <p>可選擇是否需要小天使的協助與提示。</p>
+            </li>
+            <li class="game-description-item w-50 p-4 p-lg-3 my-lg-2 my-0">
+              <i class="fa-solid fa-user fa-xl mb-4 d-inline-block"></i>
+              <h3 class="fs-4 mb-2">2-4 人</h3>
+              <p>現場可臨時追加人數，只要在遊戲人數範圍內即可。</p>
+            </li>
+            <li class="game-description-item w-50 p-4 p-lg-3 my-lg-2 my-0">
+              <i class="fa-solid fa-lightbulb fa-xl mb-4"></i>
+              <h3 class="fs-4 mb-2">遊戲特色</h3>
+              <p>有刺激駕駛橋段，身歷其境，不會開車也可以體驗。</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-7 h-100">
+          <img
+            src="./assets/images/game/game_detail/game_detail_castle2.png"
+            alt="無人的街道"
+            class="rounded-2 w-100 h-auto"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-6">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col mb-lg-0 mb-3">
+          <div class="bg-light rounded-2 text-center py-4 px-3">
+            <h3 class="fs-4">原價</h3>
+            <div class="border-bottom-line"></div>
+            <h4 class="font-oswald title-1">
+              650<span class="ms-2 fs-5">/人</span>
+            </h4>
+          </div>
+        </div>
+        <div class="col mb-lg-0 mb-3">
+          <div class="bg-light rounded-2 text-center py-4 px-3">
+            <h3 class="fs-4">2-4人包場</h3>
+            <div class="border-bottom-line"></div>
+            <h4 class="font-oswald title-1">
+              600<span class="ms-2 fs-5">/人</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <a
+          class="btn btn-lg btn-outline-light px-5 py-3 mt-6 hover-right rounded-1"
+          href="#booking"
+          >立即查看密室<i class="fa-solid fa-caret-right fa-lg ms-2"></i
+        ></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="comment py-7">
+    <div class="container comment-container position-relative">
+      <div class="swiper comment-swiper">
+        <div class="row swiper-wrapper flex-nowrap">
+          <div class="swiper-slide col-lg-4 mb-4 mb-lg-0 d-flex">
+            <div
+              class="rounded-top-left rounded-bottom-right bg-white p-4 d-flex flex-column"
+            >
+              <p class="pb-1 flex-grow-1">
+                玩過很多密室了，這家的密室很有創意，難度也剛剛好，不會覺得覺得無聊，今天玩的居然有多重關卡，下次會來二刷玩看看別的結局，劇情設計的超讚，機關很炫炮！
+              </p>
+              <div class="border-bottom-line mb-2"></div>
+              <div
+                class="comment-profile d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/index/user_1.png" alt="湯哥" />
+                  <h4 class="fs-7 ms-2">湯哥</h4>
+                </div>
+                <div class="comment-star comment-star-5"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide col-lg-4 mb-4 mb-lg-0 d-flex">
+            <div
+              class="rounded-top-left rounded-bottom-right bg-white p-4 d-flex flex-column"
+            >
+              <p class="pb-1 flex-grow-1">
+                比我想像的更好玩！原本還有點擔心第一次玩會雷到大家，幸好小天使很耐心解說，出現的時機也很及時，整個體驗很棒，之後會再來玩～
+              </p>
+              <div class="border-bottom-line mb-2"></div>
+              <div
+                class="comment-profile d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/index/user_2.png" alt="莉莉" />
+                  <h4 class="fs-7 ms-2">莉莉</h4>
+                </div>
+                <div class="comment-star comment-star-5"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide col-lg-4 mb-4 mb-lg-0 d-flex">
+            <div
+              class="rounded-top-left rounded-bottom-right bg-white p-4 d-flex flex-column"
+            >
+              <p class="pb-1 flex-grow-1">
+                機關和劇情都很好玩，比較可惜的是今天的工作人員態度不太好，有點小扣分，希望可以再加強訓練。
+              </p>
+              <div class="border-bottom-line mb-2"></div>
+              <div
+                class="comment-profile d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/index/user_3.png" alt="多尼兒" />
+                  <h4 class="fs-7 ms-2">多尼兒</h4>
+                </div>
+                <div class="comment-star comment-star-4"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide col-lg-4 mb-4 mb-lg-0 d-flex">
+            <div
+              class="rounded-top-left rounded-bottom-right bg-white p-4 d-flex flex-column"
+            >
+              <p class="pb-1 flex-grow-1">
+                小天使的口條超棒！對新手很友善，解題也蠻有邏輯的，但也很考驗觀察力，對老手來說具有挑戰性，和朋友來玩都覺得體驗上很棒！
+              </p>
+              <div class="border-bottom-line mb-2"></div>
+              <div
+                class="comment-profile d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/index/user_4.png" alt="斯羅" />
+                  <h4 class="fs-7 ms-2">斯羅</h4>
+                </div>
+                <div class="comment-star comment-star-5"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide col-lg-4 mb-4 mb-lg-0 d-flex">
+            <div
+              class="rounded-top-left rounded-bottom-right bg-white p-4 d-flex flex-column"
+            >
+              <p class="pb-1 flex-grow-1">
+                這次沒有在時間內通關，但透過店員小姐的介紹，也能了解故事的全貌，推推！
+              </p>
+              <div class="border-bottom-line mb-2"></div>
+              <div
+                class="comment-profile d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/index/user_5.png" alt="尤爾莎" />
+                  <h4 class="fs-7 ms-2">尤爾莎</h4>
+                </div>
+                <div class="comment-star comment-star-5"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide col-lg-4 mb-4 mb-lg-0 d-flex">
+            <div
+              class="rounded-top-left rounded-bottom-right bg-white p-4 d-flex flex-column"
+            >
+              <p class="pb-1 flex-grow-1">
+                機關設計很新穎，故事也讓人會一再回味，回訪好多次了，期待之後的新遊戲！
+              </p>
+              <div class="border-bottom-line mb-2"></div>
+              <div
+                class="comment-profile d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/index/user_6.png" alt="卡雷" />
+                  <h4 class="fs-7 ms-2">卡雷</h4>
+                </div>
+                <div class="comment-star comment-star-4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination position-absolute"></div>
+    </div>
+  </section>
+
+  <section class="py-lg-7 py-6 text-white fs-5" id="booking">
+    <div class="container">
+      <h2 class="fs-1 deco-line text-white text-center mb-6">預約注意事項</h2>
+      <div class="bg-blur-dark border rounded-1 px-4 py-2">
+        <ul class="list-unstyled mb-0">
+          <li class="border-bottom py-3 px-2">
+            <i class="fa-solid fa-triangle-exclamation d-inline-block me-2"></i
+            >若超過預約時間，恕無法進場，亦不予退費。
+          </li>
+          <li class="border-bottom py-3 px-2">
+            <i class="fa-solid fa-triangle-exclamation d-inline-block me-2"></i
+            >此遊戲人數為 2 - 4 人，可於人數範圍內於當天臨時增加體驗玩家。
+          </li>
+          <li class="border-bottom py-3 px-2">
+            <i class="fa-solid fa-triangle-exclamation d-inline-block me-2"></i
+            >請穿著輕便、好行動的服裝，盡量避免穿裙子。
+          </li>
+          <li class="border-bottom py-3 px-2">
+            <i class="fa-solid fa-triangle-exclamation d-inline-block me-2"></i
+            >請配合人員指示遊玩，屢勸不聽者，將終止遊戲體驗。
+          </li>
+          <li class="py-3 px-2">
+            <i class="fa-solid fa-triangle-exclamation d-inline-block me-2"></i
+            >安全考量，孕婦與 6 歲以下幼童請勿體驗。
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div
+            id="datepicker"
+            class="bg-blur border rounded-2 mb-4 mb-lg-0"
+          ></div>
+        </div>
+        <div class="col-lg-5">
+          <ul class="overflow-hidden p-0">
+            <li
+              class="data-item bg-white d-flex justify-content-between py-4 px-3 align-items-center rounded-2 mb-3"
+            >
+              <div>
+                <h3 class="fs-4 mb-2">【無人的街道】</h3>
+                <i class="fa-regular fa-clock d-inline-block mx-2"></i
+                ><time datetime="10:30">10:30</time>
+              </div>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-dark px-3 rounded-1"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                預約
+              </button>
+            </li>
+            <li
+              class="data-item bg-white d-flex justify-content-between py-4 px-3 align-items-center rounded-2 mb-3"
+            >
+              <div>
+                <h3 class="fs-4 mb-2">【無人的街道】</h3>
+                <i class="fa-regular fa-clock d-inline-block mx-2"></i
+                ><time datetime="11:30">11:30</time>
+              </div>
+              <button
+                type="button"
+                class="btn btn-dark px-3 rounded-1 disabled"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                已額滿
+              </button>
+            </li>
+            <li
+              class="data-item bg-white d-flex justify-content-between py-4 px-3 align-items-center rounded-2 mb-3"
+            >
+              <div>
+                <h3 class="fs-4 mb-2">【無人的街道】</h3>
+                <i class="fa-regular fa-clock d-inline-block mx-2"></i
+                ><time datetime="12:30">12:30</time>
+              </div>
+              <button
+                type="button"
+                class="btn btn-dark px-3 rounded-1"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                預約
+              </button>
+            </li>
+            <li
+              class="data-item bg-white d-flex justify-content-between py-4 px-3 align-items-center rounded-2 mb-3"
+            >
+              <div>
+                <h3 class="fs-4 mb-2">【無人的街道】</h3>
+                <i class="fa-regular fa-clock d-inline-block mx-2"></i
+                ><time datetime="13:30">13:30</time>
+              </div>
+              <button
+                type="button"
+                class="btn btn-dark px-3 rounded-1"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                預約
+              </button>
+            </li>
+            <li
+              class="data-item bg-white d-flex justify-content-between py-4 px-3 align-items-center rounded-2 mb-3"
+            >
+              <div>
+                <h3 class="fs-4 mb-2">【無人的街道】</h3>
+                <i class="fa-regular fa-clock d-inline-block mx-2"></i
+                ><time datetime="14:30">14:30</time>
+              </div>
+              <a class="btn btn-dark disabled px-3 rounded-1">已額滿</a>
+            </li>
+            <li
+              class="data-item bg-white d-flex justify-content-between py-4 px-3 align-items-center rounded-2 mb-3"
+            >
+              <div>
+                <h3 class="fs-4 mb-2">【無人的街道】</h3>
+                <i class="fa-regular fa-clock d-inline-block mx-2"></i
+                ><time datetime="15:30">15:30</time>
+              </div>
+              <a class="btn btn-dark disabled px-3 rounded-1">已額滿</a>
+            </li>
+          </ul>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title fs-3" id="staticBackdropLabel">
+                    預約密室
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="book-info border-bottom">
+                    <ul>
+                      <li>密室主題：無人的街道</li>
+                      <li>場次：2022/10/20 (三) 19:00</li>
+                      <li>遊戲人數：2 - 4 人</li>
+                    </ul>
+                  </div>
+                  <form class="book-form pt-4">
+                    <label for="name" class="d-block mb-1 fs-7">真實姓名</label>
+                    <input
+                      type="text"
+                      id="name"
+                      class="d-block w-100 mb-3 px-2 py-1"
+                    />
+                    <label for="email" class="d-block mb-1 fs-7"
+                      >電子信箱（寄送預約成功的通知）</label
+                    >
+                    <input
+                      type="mail"
+                      id="email"
+                      class="d-block w-100 mb-3 px-2 py-1"
+                    />
+                    <label for="phone" class="d-block mb-1 fs-7"
+                      >手機號碼</label
+                    >
+                    <input
+                      type="tel"
+                      id="phone"
+                      class="d-block w-100 mb-3 px-2 py-1"
+                    />
+                    <label for="time" class="d-block mb-1 fs-7"
+                      >方便接電話的時間（預約成功後 24
+                      小時內將會撥打電話向您確認）</label
+                    >
+                    <input
+                      type="time"
+                      id="time"
+                      class="d-block w-100 mb-3 px-2 py-1"
+                    />
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-dark w-100 rounded-0 py-2"
+                  >
+                    確認預約
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-5 py-lg-7 py-6">
+    <div class="container">
+      <h1 class="fs-1 deco-line text-white text-center mb-6">瀏覽其他密室</h1>
+      <div class="container position-relative game-container">
+        <div class="swiper game-swiper">
+          <div class="row swiper-wrapper flex-nowrap">
+            <div
+              class="swiper-slide col-lg-3 col-md-6 col-12 d-flex justify-content-center"
+            >
+              <div class="card card-game hover-top rounded-2">
+                <div class="card-img position-relative">
+                  <img
+                    src="./assets/images/game/game_1.png"
+                    class="card-img-top"
+                    alt="古堡狂歡之夜"
+                  />
+                  <h3
+                    class="card-title position-absolute ms-3 bottom-0 text-white mb-3 fs-lg-3"
+                  >
+                    古堡狂歡之夜
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <h4 class="fs-7 mb-2">4-8 人 ｜ 70 分鐘 ｜ 困難</h4>
+                  <p class="card-text text-ellipsis-2 mb-4">
+                    在墨色的夜裡，你不小心闖入了屬於「他們」的派對
+                    奇怪的是，參與者都是些玩偶 他們彷彿被注入了生命，動了起來
+                    派對的開場，他們說
+                    「這裡不允許有外人進來，外來者一律抓住。」
+                    小心不要被他們找到了，在有限的時間裡逃離吧。
+                  </p>
+                  <a href="#" class="btn btn-dark w-100 rounded-1">查看密室</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide col-lg-3 col-md-6 col-12 d-flex justify-content-center"
+            >
+              <div class="card card-game hover-top rounded-2">
+                <div class="card-img position-relative">
+                  <img
+                    src="./assets/images/game/game_2.png"
+                    class="card-img-top"
+                    alt="無人的街道"
+                  />
+                  <h3
+                    class="card-title position-absolute ms-3 bottom-0 text-white mb-3 fs-lg-3"
+                  >
+                    無人的街道
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <h4 class="fs-7 mb-2">2-4 人 ｜ 90 分鐘 ｜ 簡單</h4>
+                  <p class="card-text text-ellipsis-2 mb-4">
+                    當你再次醒來，街道上空無一人，有台車向你駛了過來，駕駛座卻沒有人，
+                  </p>
+                  <a href="#" class="btn btn-dark w-100 rounded-1">查看密室</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide col-lg-3 col-md-6 col-12 d-flex justify-content-center"
+            >
+              <div class="card card-game hover-top rounded-2">
+                <div class="card-img position-relative">
+                  <img
+                    src="./assets/images/game/game_3.png"
+                    class="card-img-top"
+                    alt="神秘攤商"
+                  />
+                  <h3
+                    class="card-title position-absolute ms-3 bottom-0 text-white mb-3 fs-lg-3"
+                  >
+                    神秘攤商
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <h4 class="fs-7 mb-2">4-10 人 ｜ 90 分鐘 ｜ 中等</h4>
+                  <p class="card-text text-ellipsis-2 mb-4">
+                    燈泡一閃一閃的，有人在朝你招手，你忍不住靠了過去，卻發現有個秘密在
+                  </p>
+                  <a href="#" class="btn btn-dark w-100 rounded-1">查看密室</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide col-lg-3 col-md-6 col-12 d-flex justify-content-center"
+            >
+              <div class="card card-game hover-top rounded-2">
+                <div class="card-img position-relative">
+                  <img
+                    src="./assets/images/game/game_4.png"
+                    class="card-img-top"
+                    alt="無限迴廊"
+                  />
+                  <h3
+                    class="card-title position-absolute ms-3 bottom-0 text-white mb-3 fs-lg-3"
+                  >
+                    無限迴廊
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <h4 class="fs-7 mb-2">4-8 人 ｜ 70 分鐘 ｜ 困難</h4>
+                  <p class="card-text text-ellipsis-2 mb-4">
+                    迴廊無限向前延伸，走了許久都沒有盡頭，你發現牆上有一些奇怪的圖樣，那也許是你離開這個迴圈的唯一辦法
+                  </p>
+                  <a href="#" class="btn btn-dark w-100 rounded-1">查看密室</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide col-lg-3 col-md-6 col-12 d-flex justify-content-center"
+            >
+              <div class="card card-game hover-top rounded-2">
+                <div class="card-img position-relative">
+                  <img
+                    src="./assets/images/game/game_5.png"
+                    class="card-img-top"
+                    alt="墨珠"
+                  />
+                  <h3
+                    class="card-title position-absolute ms-3 bottom-0 text-white mb-3 fs-lg-3"
+                  >
+                    墨珠
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <h4 class="fs-7 mb-2">2-6 人 ｜ 50 分鐘 ｜ 簡單</h4>
+                  <p class="card-text text-ellipsis-2 mb-4">
+                    墨水滴落，書房裡的書飛了起來，接著你墜落到了故事裡，要怎麼逃出書
+                  </p>
+                  <a href="#" class="btn btn-dark w-100 rounded-1">查看密室</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide col-lg-3 col-md-6 col-12 d-flex justify-content-center"
+            >
+              <div class="card card-game hover-top rounded-2">
+                <div class="card-img position-relative">
+                  <img
+                    src="./assets/images/game/game_6.png"
+                    class="card-img-top"
+                    alt="盜墓者"
+                  />
+                  <h3
+                    class="card-title position-absolute ms-3 bottom-0 text-white mb-3 fs-lg-3"
+                  >
+                    盜墓者
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <h4 class="fs-7 mb-2">4-8 人 ｜ 60 分鐘 ｜ 中等</h4>
+                  <p class="card-text text-ellipsis-2 mb-4">
+                    接到了一個委託，希望你去把洞穴裡的物品取回，殊不知來到了一個陵墓，或許是震怒了陵墓的主人
+                  </p>
+                  <a href="#" class="btn btn-dark w-100 rounded-1">查看密室</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide col-lg-3 col-md-6 col-12 d-flex justify-content-center"
+            >
+              <div class="card card-game hover-top rounded-2">
+                <div class="card-img position-relative">
+                  <img
+                    src="./assets/images/game/game_7.png"
+                    class="card-img-top"
+                    alt="沉默畫家"
+                  />
+                  <h3
+                    class="card-title position-absolute ms-3 bottom-0 text-white mb-3 fs-lg-3"
+                  >
+                    沉默畫家
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <h4 class="fs-7 mb-2">4-8 人 ｜ 70 分鐘 ｜ 中等</h4>
+                  <p class="card-text text-ellipsis-2 mb-4">
+                    畫家不斷地一筆、一筆描繪著，他不說話，畫像卻朝你說了句話，他說「我們都是被囚禁的
+                  </p>
+                  <a href="#" class="btn btn-dark w-100 rounded-1">查看密室</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide col-lg-3 col-md-6 col-12 d-flex justify-content-center"
+            >
+              <div class="card card-game hover-top rounded-2">
+                <div class="card-img position-relative">
+                  <img
+                    src="./assets/images/game/game_8.png"
+                    class="card-img-top"
+                    alt="全境感染"
+                  />
+                  <h3
+                    class="card-title position-absolute ms-3 bottom-0 text-white mb-3 fs-lg-3"
+                  >
+                    全境感染
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <h4 class="fs-7 mb-2">4-10 人 ｜ 90 分鐘 ｜ 困難</h4>
+                  <p class="card-text text-ellipsis-2 mb-4">
+                    沈重的腳步聲從樓上傳來，燭光搖曳著，照射出搖晃的身影，與不停滴落的液體
+                  </p>
+                  <a href="#" class="btn btn-dark w-100 rounded-1">查看密室</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-button-next position-absolute btn-blur rounded-circle circle-btn d-flex align-items-center justify-content-center"
+        >
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
+        <div
+          class="swiper-button-prev position-absolute btn-blur rounded-circle circle-btn d-flex align-items-center justify-content-center"
+        >
+          <i class="fa-solid fa-arrow-left-long"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex justify-content-center">
+      <a href="game.html" class="btn btn-blur btn-lg rounded-lg py-3 px-5 mt-5">
+        查看所有密室
+      </a>
+    </div>
+  </section>
+</div>
+<div class="game-detail-bg position-fixed top-0"></div>
+
+
+    <footer class="footer text-white py-6 bg-footer">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-2 pb-5 pb-lg-0">
+            <ul class="list-unstyled">
+              <li class="mb-3"><a href="index.html">首頁</a></li>
+              <li class="mb-3"><a href="game.html">密室遊戲</a></li>
+              <li class="mb-3"><a href="group.html">團體 / 企業方案</a></li>
+              <li class="mb-3"><a href="about.html">關於輯光</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <address>
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  信箱｜<a href="mailto:polarlight@gmail.com"
+                    >polarlight@gmail.com</a
+                  >
+                </li>
+                <li class="mb-3">
+                  電話｜<a href="tel:+886-932236542">0932-236-542</a>
+                </li>
+                <li class="mb-3">地址｜台北市萬華區成都路 10 號 2 樓</li>
+                <ul class="d-flex list-unstyled">
+                  <li class="pe-4">
+                    <a href="#">
+                      <img
+                        src="./assets/images/share/social_1.svg"
+                        alt="facebook"
+                    /></a>
+                  </li>
+                  <li class="pe-4">
+                    <a href="#"
+                      ><img
+                        src="./assets/images/share/social_2.svg"
+                        alt="instagram"
+                    /></a>
+                  </li>
+                  <li class="pe-4">
+                    <a href="#"
+                      ><img src="./assets/images/share/social_3.svg" alt="line"
+                    /></a>
+                  </li>
+                </ul>
+              </ul>
+            </address>
+          </div>
+          <div class="col-lg-5 pb-5 pb-lg-0">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7647136867013!2d121.50476511555196!3d25.042057683968608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a909a2668603%3A0x6cca37fe22ec357a!2zMTA45Y-w5YyX5biC6JCs6I-v5Y2A5oiQ6YO96LevMTDomZ8y5qiT!5e0!3m2!1szh-TW!2stw!4v1666940596890!5m2!1szh-TW!2stw"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="rounded-2"
+            ></iframe>
+          </div>
+        </div>
+        <p class="fs-7">Copyright © 2022 輯光工作室 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>

@@ -13133,7 +13133,6 @@ a:hover {
 }
 
 .game-container .swiper-slide {
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13174,24 +13173,12 @@ a:hover {
 }
 
 .comment-container {
-  height: 280px;
-}
-
-@media (max-width: 1200px) {
-  .comment-container {
-    height: 350px;
-  }
-}
-
-@media (max-width: 768px) {
-  .comment-container {
-    height: 350px;
-  }
+  height: 360px;
 }
 
 .comment-container .comment-swiper {
   width: 100%;
-  height: 300px;
+  height: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13202,7 +13189,7 @@ a:hover {
 
 @media (max-width: 1200px) {
   .comment-container .comment-swiper {
-    height: 300px;
+    height: 280px;
   }
 }
 
@@ -13219,11 +13206,6 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.comment-container .swiper-pagination {
-  bottom: -10px;
-  z-index: 10;
 }
 
 .comment-container .swiper-pagination-bullet {
@@ -13502,27 +13484,41 @@ a {
   margin: 0 auto;
 }
 
+@media (max-width: 576px) {
+  .ui-datepicker-calendar td a {
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
 .ui-datepicker-calendar .ui-state-default {
   border: none;
   background: none;
 }
 
-.ui-datepicker-calendar .ui-state-active {
+.ui-datepicker-calendar .ui-state-unit, .ui-datepicker-calendar .ui-state-active, .ui-datepicker-calendar .ui-state-highlight {
   width: 60px;
   height: 60px;
   line-height: 60px;
-  background: white;
   border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  .ui-datepicker-calendar .ui-state-unit, .ui-datepicker-calendar .ui-state-active, .ui-datepicker-calendar .ui-state-highlight {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+  }
+}
+
+.ui-datepicker-calendar .ui-state-active {
+  background: white;
   color: black;
 }
 
 .ui-datepicker-calendar .ui-state-highlight {
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  background: #89432a;
   color: white;
-  border-radius: 50%;
+  background: #89432a;
 }
 
 .bg-footer {
@@ -13631,10 +13627,18 @@ a {
   opacity: 0.5;
 }
 
-.game-detail {
+.game-detail-castle {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), to(black)), center/cover url(../images/game/game_detail_1.png);
   background: -o-linear-gradient(top, transparent 40%, black), center/cover url(../images/game/game_detail_1.png);
   background: linear-gradient(180deg, transparent 40%, black), center/cover url(../images/game/game_detail_1.png);
+  height: 100vh;
+  width: 100%;
+}
+
+.game-detail-street {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), to(black)), center/cover url(../images/game/game_detail/game_detail_castle.jpg);
+  background: -o-linear-gradient(top, transparent 40%, black), center/cover url(../images/game/game_detail/game_detail_castle.jpg);
+  background: linear-gradient(180deg, transparent 40%, black), center/cover url(../images/game/game_detail/game_detail_castle.jpg);
   height: 100vh;
   width: 100%;
 }
@@ -13685,14 +13689,11 @@ a {
   background-image: url(../images/group/group_4.png);
 }
 
-.overflow-x {
-  overflow-x: scroll;
-  margin-right: -20px;
-  margin-left: -20px;
-}
-
 @media (max-width: 360px) {
   .overflow-x {
+    overflow-x: scroll;
+    margin-right: -20px;
+    margin-left: -20px;
     padding-left: 100px;
   }
 }
