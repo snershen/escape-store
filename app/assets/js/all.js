@@ -66,7 +66,7 @@ function countNum(endNum, target) {
       countNum: endNum,
     },
     {
-      duration: 1500,
+      duration: 1800,
       easing: "linear",
       step: function () {
         target.text(Math.floor(this.countNum));
