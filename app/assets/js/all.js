@@ -78,6 +78,7 @@ function countNum(endNum, target) {
   );
 }
 
+//滾動時的觸發條件
 function checkSlide(e) {
   const storeNum = document.querySelector(".store-num");
   //抓取目前滑到的頁面底部位置
@@ -120,5 +121,5 @@ $(document).ready(function () {
 //parallax
 window.addEventListener("scroll", (e) => {
   $("#game-banner").css("opacity", 1 - window.scrollY / 700);
-  $("#game-banner").css("top", window.scrollY + "px");
+  $("#game-banner").css("transform", `translateY(${window.scrollY + "px"})`);
 });
