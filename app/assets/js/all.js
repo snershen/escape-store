@@ -66,7 +66,7 @@ function countNum(endNum, target) {
       countNum: endNum,
     },
     {
-      duration: 5000,
+      duration: 1500,
       easing: "linear",
       step: function () {
         target.text(Math.floor(this.countNum));
@@ -78,23 +78,24 @@ function countNum(endNum, target) {
   );
 }
 
-// if ($(window.scrollY) > $(".comment".offsetTop)) {
-const comment = document.querySelector(".comment");
-
-window.addEventListener("scroll", (e) => {
-  if (window.scrollY <= comment.offsetTop - 1300) {
-    // setTimeout(countNum(8, $("#game-num")), 5000);
-    console.log("hui");
-    console.log(window.scrollY);
-    console.log(comment.offsetTop + 100);
+function checkSlide(e) {
+  const storeNum = document.querySelector(".store-num");
+  //抓取目前滑到的頁面底部位置
+  const slideAt = window.scrollY + window.innerHeight;
+  //抓取目標元素的頂部位置
+  const elTop = storeNum.offsetTop;
+  //當滑到的頁面底部位置觸碰到目標元素時
+  const isTouched = slideAt > elTop;
+  //限定觸發範圍，以增進效能
+  const isTouchedRange = slideAt - 50 < elTop;
+  if (isTouched && isTouchedRange) {
     countNum(8, $("#game-num"));
     countNum(15643, $("#player-num"));
     countNum(1342, $("#comment-num"));
-    window.removeEventListener("scroll", countNum);
-  } else {
-    return;
   }
-});
+}
+
+window.addEventListener("scroll", checkSlide);
 
 //calendar
 $(document).ready(function () {
